@@ -3,8 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Books</title>
-		<link href="css/style.css" rel="stylesheet" />
+		<title>Clock</title>
+		<link href="src/css/index.css" rel="stylesheet" />
+
+		<!-- font Pacifico -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 	</head>
-	<body></body>
+	<body>
+		<div class="container-clock">
+			<h1 class="animate__animated animate__backInUp"><span>you</span>Book!</h1>
+			<h2 id="time">00:00:00</h2>
+			<p id="date">date</p>
+			<a href="home.html" class="button-init">Entrar</a>
+		</div>
+		<script src="./src/js/clock.js"></script>
+	</body>
 </html>
