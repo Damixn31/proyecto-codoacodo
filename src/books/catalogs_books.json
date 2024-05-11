@@ -1,0 +1,46 @@
+{
+	"libros": [
+		{
+			"titulo": "Título del Libro 1",
+			"autor": "Autor del Libro 1",
+			"paginas": 5,
+			"imagen_portada": "url_imagen_1.jpg",
+			"descripcion": "Breve descripción del Libro 1",
+			"contenido_paginas": [
+				"Contenido de la página 1 del Libro 1",
+				"Contenido de la página 2 del Libro 1",
+				"Contenido de la página 3 del Libro 1",
+				"Contenido de la página 4 del Libro 1",
+				"Contenido de la página 5 del Libro 1"
+			]
+		},
+		{
+			"titulo": "Título del Libro 2",
+			"autor": "Autor del Libro 2",
+			"paginas": 5,
+			"imagen_portada": "url_imagen_2.jpg",
+			"descripcion": "Breve descripción del Libro 2",
+			"contenido_paginas": [
+				"Contenido de la página 1 del Libro 2",
+				"Contenido de la página 2 del Libro 2",
+				"Contenido de la página 3 del Libro 2",
+				"Contenido de la página 4 del Libro 2",
+				"Contenido de la página 5 del Libro 2"
+			]
+		},
+		{
+			"titulo": "Título del Libro 3",
+			"autor": "Autor del Libro 3",
+			"paginas": 5,
+			"imagen_portada": "url_imagen_3.jpg",
+			"descripcion": "Breve descripción del Libro 3",
+			"contenido_paginas": [
+				"Contenido de la página 1 del Libro 3",
+				"Contenido de la página 2 del Libro 3",
+				"Contenido de la página 3 del Libro 3",
+				"Contenido de la página 4 del Libro 3",
+				"Contenido de la página 5 del Libro 3"
+			]
+		}
+	]
+}
