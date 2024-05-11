@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+#time, .to-contact {
+    font-size: 50px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.container-search {
+    border: 1px solid black;
+    border-radius: 90px;
+    padding: 10px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.search-button {
+    font-size: 20px;
+}
+
+hr {
+    margin: 30px;
+}
+
+.container-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 30px;
+}
+
+.container-books div img {
+    width: 50%;
+    height: auto;
+}
+
+.book {
+    text-align: center;
+    margin: 30px;
+}
