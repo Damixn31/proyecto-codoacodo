@@ -3,15 +3,25 @@
     padding: 0;
 }
 
-header {
+header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    margin: 30px;
+}
+
+.logo-you {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.logo-book {
+    color: #232323;
 }
 
 #time, .to-contact {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Roboto Mono", monospace;
 }
 
@@ -25,10 +35,18 @@ header {
     padding: 10px;
     font-size: 20px;
     border: none;
+    outline: none;
 }
 
 .search-button {
+    margin-right: 5px;
     font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.search-button:hover{
+    cursor: pointer;
 }
 
 hr {
@@ -50,4 +68,8 @@ hr {
 .book {
     text-align: center;
     margin: 30px;
+}
+
+.info{
+    margin-top: 20px;
 }
