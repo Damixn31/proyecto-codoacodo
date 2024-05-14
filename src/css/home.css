@@ -20,7 +20,7 @@ header, footer {
     color: #232323;
 }
 
-#time, .to-contact {
+#time {
     font-size: 40px;
     font-family: "Roboto Mono", monospace;
 }
@@ -61,13 +61,20 @@ hr {
 }
 
 .container-books div img {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
 .book {
     text-align: center;
-    margin: 30px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
 }
 
 .info{
