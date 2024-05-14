@@ -42,14 +42,19 @@ hr {
 	gap: 10px;
 	margin: 30px;
 }
+.container-books img {
+	width: 200px;
+	height: 300px;
+}
+.container-books li {
+	display: grid;
+	text-decoration: none;
+	font-size: 20px;
+	justify-content: center;
+	text-align: center;
+}
 
-.container-books div img {
+/*.container-books div img {
 	width: 50%;
 	height: auto;
-}
-
-.book {
-	text-align: center;
-	margin: 30px;
-}
-
+}*/
