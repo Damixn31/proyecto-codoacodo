@@ -65,3 +65,33 @@ span {
   background-color: #000;
   color: #fff;
 }
+
+@media (max-width: 750px) {
+  .container-clock h1 {
+    font-size: 4rem;
+  }
+  .container-clock h2 {
+    font-size: 2rem;
+  }
+  .container-clock p {
+    font-size: 1rem;
+  }
+  .button-init {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-clock h1 {
+    font-size: 12rem;
+  }
+  .container-clock h2 {
+    font-size: 5rem;
+  }
+  .container-clock p {
+    font-size: 3rem;
+  }
+  .button-init {
+    font-size: 24px;
+  }
+}
