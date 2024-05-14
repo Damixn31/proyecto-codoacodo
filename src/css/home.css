@@ -60,10 +60,22 @@ hr {
     margin: 30px;
 }
 
-.container-books div img {
+.container-books img {
+	width: 200px;
+	height: 300px;
+}
+.container-books li {
+	display: grid;
+	text-decoration: none;
+	font-size: 20px;
+	justify-content: center;
+	text-align: center;
+}
+
+/* .container-books div img {
     width: 80%;
     height: auto;
-}
+} */
 
 .book {
     text-align: center;
@@ -72,7 +84,7 @@ hr {
     transition: transform 0.3s ease-in-out;
 }
 
-.book:hover {
+.container-books:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
