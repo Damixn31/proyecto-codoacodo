@@ -20,6 +20,10 @@ header, footer {
     margin: 30px;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .logo-you {
     font-family: "Pacifico", cursive;
     font-size: 3rem;
