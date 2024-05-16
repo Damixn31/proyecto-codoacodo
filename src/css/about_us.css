@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 30px;
+    height: 30px;
 }
 
 header a {
@@ -123,6 +124,10 @@ h1 {
 }
 
 @media (min-width: 850px) {
+    header {
+        height: 60px;
+    }
+
     .container-contact {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -139,6 +144,10 @@ h1 {
 }
 
 @media (max-width: 600px) {
+    header {
+        height: 10px;
+    }
+
     .contact-form form {
         display: block;
     }
