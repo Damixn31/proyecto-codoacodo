@@ -36,7 +36,7 @@ header a {
 }
 
 #time {
-    font-size: 40px;
+    font-size: 3rem;
     font-family: "Roboto Mono", monospace;
 }
 
@@ -104,7 +104,7 @@ hr {
         height: 30px;
     }
 
-    .logo-you {
+    .logo-you, #time, .to-contact {
         font-size: 2rem;
     }
 
@@ -117,10 +117,6 @@ hr {
         padding: 8px;
     }
 
-    #time, .to-contact {
-        font-size: 20px;
-    }
-
     .search-button {
         font-size: 15px;
     }
@@ -131,7 +127,7 @@ hr {
         height: 10px;
     }
 
-    .logo-you {
+    .logo-you, #time, .to-contact {
         font-size: 1rem;
     }
 
@@ -142,10 +138,6 @@ hr {
     #search {
         font-size: 8px;
         padding: 3px;
-    }
-
-    #time, .to-contact {
-        font-size: 15px;
     }
 
     .search-button {

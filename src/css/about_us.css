@@ -13,7 +13,13 @@ header {
 }
 
 header a {
+    font-size: 2rem;
     font-family: "Poetsen One", sans-serif;
+}
+
+header p {
+    font-size: 2rem;
+    font-family: "Roboto Mono", monospace;
 }
 
 .hr1 {
@@ -128,6 +134,10 @@ h1 {
         height: 60px;
     }
 
+    header p {
+        font-size: 3rem;
+    }
+
     .container-contact {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -146,6 +156,14 @@ h1 {
 @media (max-width: 600px) {
     header {
         height: 10px;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    header p {
+        font-size: 1rem;
     }
 
     .contact-form form {
