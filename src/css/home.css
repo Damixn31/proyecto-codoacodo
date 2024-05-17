@@ -122,7 +122,7 @@ hr {
     }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
     header {
         height: 10px;
     }

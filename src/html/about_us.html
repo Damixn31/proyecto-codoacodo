@@ -38,34 +38,35 @@
         <h1>Contactos</h1>
         <div class="container-contact">
             <div class="contact-form">
-                <form action="">
+                <form action="" id="form">
                     <div>
-                        <label for="">Nombre:</label>
-                        <input type="text">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name">
                     </div>
                     <div>
-                        <label for="">Email:</label>
-                        <input type="text">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
                     </div>
                     <div>
-                        <label for="">Motivo de Contacto:</label>
-                        <select name="" id="">
+                        <label for="reason">Motivo de Contacto:</label>
+                        <select name="reason" id="reason">
                             <option value="" hidden>Selecciona un motivo</option>
-                            <option value="">Consulta</option>
-                            <option value="">Sugerencia</option>
-                            <option value="">Queja</option>
+                            <option value="question">Consulta</option>
+                            <option value="suggestion">Sugerencia</option>
+                            <option value="complaint">Queja</option>
                         </select>
                     </div>
                     <div>
-                        <label for="">Adjuntar imagen:</label>
+                        <label for="avatar">Adjuntar imagen:</label>
                         <input type="file">
                     </div>
                     <div class="block">
-                        <label for="">Mensaje:</label>
-                        <textarea name="" id="" rows="5" cols="50"></textarea>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" id="message" rows="5" cols="50"></textarea>
                     </div>
                     <div class="block">
-                        <button>Enviar</button>
+                        <button type="submit">Enviar</button>
+                        <p id="warnings"></p>  
                     </div>
                 </form>
             </div>
@@ -83,5 +84,6 @@
             </div>
         </div>
     </main>
+    <script src="../js/validation.js"></script>
 </body>
 </html>
