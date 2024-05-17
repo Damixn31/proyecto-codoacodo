@@ -84,6 +84,12 @@ h1 {
     padding: 0.7em;
 }
 
+.contact-form form .flex div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
 .contact-form form .block {
     grid-column: 1/3;
 }
