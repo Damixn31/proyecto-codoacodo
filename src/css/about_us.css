@@ -15,6 +15,11 @@ header {
 header a {
     font-size: 2rem;
     font-family: "Poetsen One", sans-serif;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #000;
 }
 
 header p {
@@ -176,5 +181,11 @@ h1 {
 
     .contact-form form {
         display: block;
+    }
+    .container-contact {
+        margin: 30px;
+    }
+    .container-developer {
+        padding: 10px;
     }
 }
