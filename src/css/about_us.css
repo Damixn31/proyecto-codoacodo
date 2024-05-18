@@ -138,6 +138,10 @@ h1 {
     text-align: center;
 }
 
+.contact-info ul li a{
+    text-decoration: none;
+}
+
 .contact-info ul li a:visited{
     color: #ffffff;
 }
