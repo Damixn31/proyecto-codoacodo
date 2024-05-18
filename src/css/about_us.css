@@ -112,12 +112,14 @@ h1 {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    transition: 1s;
+    color: #ffffff;
+    background-color: #000;
+    transition: 0.5s;
 }
 
 .contact-info {
-    background-color: #000;
     color: #ffffff;
+    background-color: #000;
 }
 
 .contact-info ul {
