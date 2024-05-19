@@ -1,39 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/src/css/home.css">
-    <!-- font roboto mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <!-- font pacifico -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet"/>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/e91d9e3d42.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <h1 class="logo-you">you<span class="logo-book">Book!</span></h1>
-        <div class="container-search">
-            <form action="#">
-                <input type="text" name="search" id="search" placeholder="Buscar...">
-                <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-        <p id="time">00:00:00</p>
-    </header>
-    <hr>
-    <div id="bookList" class="container-books"></div>
-    <hr>
-    <footer>
-        <a href="/src/html/about_us.html">Quienes somos</a>
-    </footer>
-    <script src="/src/js/clock.js"></script>
-	<script src="../js/books_data.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="../css/home.css" />
+		<!-- font roboto mono -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font pacifico -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/e91d9e3d42.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+			<h1 class="logo-you">you<span class="logo-book">Book!</span></h1>
+			<div class="container-search">
+				<form action="#">
+					<input
+						type="text"
+						name="search"
+						id="search"
+						placeholder="Buscar..."
+					/>
+					<button type="submit" class="search-button">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</div>
+			<p id="time">00:00:00</p>
+		</header>
+		<hr />
+
+		<div class="container-books">
+			<ul class="book-details">
+				<li class="book-title">El título del libro</li>
+				<li class="book-author">Autor: Nombre del autor</li>
+
+				<a href="../html/pdf3.html">ir al libro</a>
+			</ul>
+
+			<div>
+				<img src="../../public/img/bash.jpg" alt="Portada del libro" />
+			</div>
+
+			<ul class="book-details">
+				<li class="book-title">Docker Para devops</li>
+				<li class="book-author">Autor: Nombre del autor</li>
+
+				<a href="../html/pdf2.html">ir al libro</a>
+			</ul>
+
+			<div>
+				<img src="../../public/img/docker.png" alt="Portada del libro" />
+			</div>
+
+			<ul class="book-details">
+				<li class="book-title">Rust 2018 VOL1</li>
+				<li class="book-author">Autor: Nombre del autor</li>
+
+				<a href="../html/pdf1.html">ir al libro</a>
+			</ul>
+
+			<div>
+				<img src="../../public/img/rust.webp" alt="Portada del libro" />
+			</div>
+		</div>
+
+		<!--<div id="bookList" class="container-books"></div> -->
+
+		<hr />
+		<footer>
+			<a href="/src/html/about_us.html">Quienes somos</a>
+		</footer>
+		<script src="../js/clock.js"></script>
+		<script src="../js/books_data.js"></script>
+	</body>
 </html>
