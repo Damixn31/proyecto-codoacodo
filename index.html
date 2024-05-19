@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>YouBook!</title>
-		<link rel="shortcut icon" href="public/img/Icono.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="public/img/Icono.ico" type="image/x-icon" />
 		<link href="src/css/index.css" rel="stylesheet" />
 
 		<!-- font Pacifico -->
@@ -20,12 +20,45 @@
 		/>
 	</head>
 	<body>
-		<div class="container-clock">
-			<h1 class="animate__animated animate__backInUp"><span>you</span>Book!</h1>
-			<h2 id="time">00:00:00</h2>
-			<p id="date">date</p>
-			<a href="./src/html/home.html" class="button-init">Entrar</a>
+		<div id="venta">
+			<div class="container-clock">
+				<h1 class="animate__animated animate__backInUp">
+					<span>you</span>Book!
+				</h1>
+				<h2 id="time">00:00:00</h2>
+				<p id="date">date</p>
+
+				<a href="./src/html/home.html" class="button-init">Entrar</a>
+			</div>
 		</div>
+
 		<script src="src/js/clock.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				VANTA.BIRDS({
+					el: "#venta",
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					scale: 1.0,
+					scaleMobile: 1.0,
+					backgroundColor: 0xffffff,
+					color1: 0x0,
+					color2: 0x596e6e,
+					birdSize: 0.5,
+					wingSpan: 40.0,
+					speedLimit: 1.0,
+					separation: 100.0,
+					alignment: 1.0,
+					cohesion: 1.0,
+					quantity: 4.0,
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -172,10 +172,10 @@ footer a:visited {
 		padding: 3px;
 	}
 
-    .search-button {
-        font-size: 10px;
-    }
-    footer a{
-        font-size: 15px;
-    }
+	.search-button {
+		font-size: 10px;
+	}
+	footer a {
+		font-size: 15px;
+	}
 }
