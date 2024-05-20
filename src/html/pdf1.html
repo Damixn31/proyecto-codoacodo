@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+		<link href="../css/pdf.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="../html/home.html">Back</a>
+			<div class="container">
+				<button id="prev-btn"><</button>
+
+				<ul>
+					<button id="next-btn">></button>
+				</ul>
+			</div>
+		</nav>
+		<hr />
+		<div class="container-sm">
+			<h1>¿Para quién es Rust?</h1>
+			<p>
+				Rust es ideal para muchas personas por una variedad de razones. Veamos
+				algunos de los grupos más importantes. Equipos de Desarrolladores Rust
+				está demostrando ser una herramienta productiva para colaborar entre
+				grandes equipos de desarrolladores con diferentes niveles de
+				conocimientos de programación de sistemas. El código de bajo nivel es
+				propenso a una variedad de errores sutiles, que en la mayoría de los
+				otros lenguajes pueden ser detectados sólo a través de extensas pruebas
+				y una cuidadosa revisión del código por parte de desarrolladores
+				experimentados. En Rust, el compilador juega un papel de guardián al
+				negarse a compilar código con estos escurridizos bugs, incluyendo bugs
+				de concurrencia. Al trabajar junto al compilador, el equipo puede
+				dedicar su tiempo a centrarse en la lógica del programa en lugar de
+				perseguir errores. Rust también trae herramientas modernas para
+				desarrolladores al mundo de la programación de sistemas: Cargo, la
+				herramienta de construcción y gestión de dependencias incluida, hace que
+				la adición, compilación y gestión de dependencias sea indolora y
+				coherente en todo el ecosistema Rust. Rustfmt asegura un estilo de
+				codificación consistente entre los desarrolladores. No siempre fue tan
+				claro, pero el lenguaje de programación Rust se centra fundamentalmente
+				en el empoderamiento: no importa qué tipo de código estés escribiendo
+				ahora, Rust te capacita para llegar más lejos, para programar con
+				confianza en una mayor variedad de dominios de los que tenías antes.
+				Tomemos, por ejemplo, el trabajo de "nivel de sistemas" que se ocupa de
+				detalles de bajo nivel de gestión de memoria, representación de datos y
+				concurrencia. Tradicionalmente, este campo de la programación es visto
+				como misterioso, accesible sólo a unos pocos selectos que han dedicado
+				los años necesarios para aprender a evitar sus trampas infames. E
+				incluso aquellos que lo practican lo hacen con precaución, para que su
+				código no se abra a las vulnerabilidades, los fallos o la corrupción.
+				Rust rompe estas barreras eliminando las viejas trampas y proporcionando
+				un conjunto de herramientas amigables y pulidas para ayudarte a lo largo
+				del camino. Los programadores que necesitan "sumergirse" en el control
+				de bajo nivel pueden hacerlo con Rust, sin asumir el riesgo habitual de
+				colisiones o agujeros de seguridad, y sin tener que aprender los puntos
+				finos de una caprichosa cadena de herramientas. Mejor aún, el lenguaje
+				está diseñado para guiarte naturalmente hacia un código confiable que
+				sea eficiente en términos de velocidad y uso de memoria. Los
+				programadores que ya están trabajando con código de bajo nivel pueden
+				utilizar Rust para aumentar sus objetivos. Por ejemplo, introducir el
+				paralelismo en Rust es una operación de relativamente bajo riesgo: el
+				compilador capturará los errores clásicos por ti. Y puedes abordar
+				optimizaciones más agresivas en tu código con la confianza de que no
+				introducirás accidentalmente fallos o vulnerabilidades. Pero Rust no se
+				limita a la programación de sistemas de bajo nivel. Es lo
+				suficientemente expresivo y ergonómico como para hacer que las
+				aplicaciones CLI, los servidores web y muchos otros tipos de código sean
+				muy agradables de escribir - encontrarás ejemplos sencillos de ambos más
+				adelante en el libro. Trabajar con Rust te permite construir habilidades
+				que se transfieren de un dominio a otro; puedes aprender Rust
+				escribiendo una aplicación web, y luego aplicar esas mismas habilidades
+				a tu Raspberry Pi. Este libro abraza plenamente el potencial de Rust
+				para empoderar a sus usuarios. Es un texto amigable y accesible
+				destinado a ayudarte a subir de nivel no sólo tu conocimiento de Rust,
+				sino también tu alcance y confianza como programador en general. Así que
+				zambúllete, prepárate para aprender y ¡bienvenido a la comunidad de
+				Rust!
+			</p>
+		</div>
+
+		<!--<div class="container">
+			<div id="pdf-container"></div>
+		</div> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+		<script src="../js/pdf.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

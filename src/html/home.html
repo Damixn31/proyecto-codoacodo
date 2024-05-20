@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="shortcut icon" href="../../public/img/Icono.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../../public/img/Icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/home.css">
     <!-- font roboto mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet"/>
-    <!-- font poetsen one -->
+	<!-- font poetsen one -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
@@ -33,13 +33,45 @@
         <p id="time">00:00:00</p>
     </header>
     <hr>
-    <main>
-        <div id="bookList" class="container-books"></div>
-    </main>
+	<div class="container-books">
+		<ul class="book-details">
+			<li class="book-title">El título del libro</li>
+			<li class="book-author">Autor: Nombre del autor</li>
+
+			<a href="../html/pdf3.html">ir al libro</a>
+		</ul>
+
+		<div>
+			<img src="../../public/img/bash.jpg" alt="Portada del libro" />
+		</div>
+
+		<ul class="book-details">
+			<li class="book-title">Docker Para devops</li>
+			<li class="book-author">Autor: Nombre del autor</li>
+
+			<a href="../html/pdf2.html">ir al libro</a>
+		</ul>
+
+		<div>
+			<img src="../../public/img/docker.png" alt="Portada del libro" />
+		</div>
+
+		<ul class="book-details">
+			<li class="book-title">Rust 2018 VOL1</li>
+			<li class="book-author">Autor: Nombre del autor</li>
+
+			<a href="../html/pdf1.html">ir al libro</a>
+		</ul>
+
+		<div>
+			<img src="../../public/img/rust.webp" alt="Portada del libro" />
+		</div>
+	</div>
+
+	<!--<div id="bookList" class="container-books"></div> -->
     <hr>
     <footer>
-        <a href="about_us.html">Quienes somos</a>
-        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="/src/html/about_us.html">Quienes somos</a>
     </footer>
     <script src="../js/clock.js"></script>
 	<script src="../js/books_data.js"></script>
