@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title></title>
+		<link href="../css/pdf.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<nav id="navbar">
+			<a href="../html/home.html">Back</a>
+			<div class="container">
+				<button id="prev-btn"><</button>
+
+				<ul>
+					<button id="next-btn">></button>
+				</ul>
+			</div>
+		</nav>
+
+		<hr />
+
+		<div class="container-sm">
+			<h2>Introducción a Haskell</h2>
+			<p>
+				Haskell es un lenguaje de programación funcional puro que ha ganado
+				reconocimiento en la comunidad de desarrollo de software por su enfoque
+				en la inmutabilidad, las funciones de primera clase y la evaluación
+				perezosa. Nombrado en honor al lógico y matemático Haskell Curry, este
+				lenguaje ofrece una perspectiva única y poderosa sobre la programación,
+				alentando a los desarrolladores a pensar en términos de funciones y
+				transformaciones de datos. Historia y Evolución Haskell fue creado a
+				finales de los años 80 por un comité de académicos y desarrolladores
+				interesados en la programación funcional. El objetivo era diseñar un
+				lenguaje que sirviera tanto para la investigación académica como para
+				aplicaciones prácticas. Desde su primera versión en 1990, Haskell ha
+				evolucionado significativamente, con la versión Haskell 2010 siendo la
+				más conocida y utilizada, y con actualizaciones continuas que incorporan
+				nuevas características y mejoras. Características Principales 1.
+				Funcionalidad Pura Haskell es un lenguaje de programación funcional
+				puro, lo que significa que las funciones en Haskell no tienen efectos
+				secundarios. Este enfoque promueve un estilo de programación más
+				predecible y fácil de razonar, ya que las funciones siempre producen el
+				mismo resultado para los mismos argumentos sin modificar el estado
+				global. 2. Evaluación Perezosa Una de las características distintivas de
+				Haskell es su evaluación perezosa. En Haskell, las expresiones no se
+				evalúan hasta que sus resultados son necesarios. Esto permite la
+				definición de estructuras de datos infinitas y mejora la eficiencia al
+				evitar cálculos innecesarios. 3. Tipado Estático y Sistema de Tipos
+				Fuerte Haskell utiliza un sistema de tipos estático y fuerte que
+				garantiza que muchos errores se detecten en tiempo de compilación. Los
+				tipos en Haskell son expresivos y permiten definir tipos personalizados
+				y genéricos. El sistema de tipos incluye características avanzadas como
+				tipos algebraicos, tipos de datos paramétricos y clases de tipos. 4.
+				Inmutabilidad En Haskell, los datos son inmutables por defecto. Una vez
+				que se crea un valor, no puede ser cambiado. Esto facilita la
+				concurrencia y el paralelismo, ya que no hay riesgo de que varias partes
+				del programa modifiquen el mismo dato simultáneamente. 5. Funciones de
+				Primera Clase y Orden Superior Las funciones en Haskell son ciudadanos
+				de primera clase, lo que significa que pueden ser pasadas como
+				argumentos, devueltas como resultados y almacenadas en estructuras de
+				datos. Además, Haskell soporta funciones de orden superior, permitiendo
+				crear funciones que toman otras funciones como argumentos o retornan
+				funciones. Aplicaciones de Haskell 1. Análisis y Procesamiento de Datos
+				Haskell se utiliza ampliamente en la investigación y el análisis de
+				datos debido a su capacidad para manejar transformaciones complejas de
+				datos de manera segura y eficiente. Su sistema de tipos garantiza que
+				las transformaciones sean correctas y consistentes. 2. Compiladores y
+				Lenguajes de Dominio Específico Haskell es popular en el desarrollo de
+				compiladores y lenguajes de dominio específico (DSL). Su capacidad para
+				definir transformaciones y optimizaciones de manera clara y concisa lo
+				hace ideal para estos propósitos. 3. Software Financiero La industria
+				financiera utiliza Haskell para desarrollar software que requiere un
+				alto grado de fiabilidad y precisión. Su inmutabilidad y sistema de
+				tipos fuerte ayudan a minimizar errores y garantizar la consistencia en
+				las operaciones financieras. 4. Desarrollo Web Aunque menos común que
+				otros lenguajes en este ámbito, Haskell tiene una presencia creciente en
+				el desarrollo web. Frameworks como Yesod y Servant permiten construir
+				aplicaciones web robustas y seguras utilizando principios funcionales.
+				Ventajas de Aprender Haskell 1. Pensamiento Funcional Aprender Haskell
+				te enseña a pensar de manera funcional, un paradigma que se está
+				volviendo cada vez más relevante en la programación moderna. Este cambio
+				de perspectiva puede mejorar tus habilidades de programación y hacerte
+				más adaptable a otros lenguajes y paradigmas. 2. Código Más Seguro y
+				Confiable El sistema de tipos fuerte y la inmutabilidad de Haskell
+				ayudan a escribir código que es más seguro y confiable, reduciendo la
+				cantidad de errores y facilitando el mantenimiento y la evolución del
+				software. 3. Concurrencia y Paralelismo Haskell facilita la escritura de
+				programas concurrentes y paralelos, aprovechando al máximo los
+				procesadores multicore modernos sin los problemas comunes asociados con
+				la sincronización y los estados compartidos.
+			</p>
+		</div>
+
+		<!--<div class="container">
+			<div id="pdf-container"></div>
+		</div> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+		<script src="../js/pdf.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
