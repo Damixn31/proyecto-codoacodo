@@ -11,76 +11,75 @@
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 			crossorigin="anonymous"
 		/>
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/e91d9e3d42.js" crossorigin="anonymous"></script>
+		<!-- font poetsen one -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<nav id="navbar">
-			<a href="../html/home.html">Back</a>
-			<div class="container">
-				<button id="prev-btn"><</button>
-
-				<ul>
-					<button id="next-btn">></button>
-				</ul>
+		<header>
+			<a href="../html/home.html"><i class="fa-solid fa-rotate-left"></i>Volver</a>
+			<p id="time">00:00:00</p>
+		</header>
+		<hr>
+		<main>
+			<div class="container-sm">
+				<h2>¿Y por qué Docker?</h2>
+				<p>
+					¿Qué proporciona Docker?• • • • • • ¿Cuáles• • • Un formato de imagen de
+					contenedores. Un método para construir las imágenes (con el fichero
+					Dockerfile o el comando docker build) Una forma de gestionar las
+					imágenes (con los comandos docker images, docker rmi, etc.) Una forma de
+					gestionar los contenedores (con los comandos docker ps, docker rm, etc.)
+					Una forma de compartir las imágenes (con los comandos docker push/pull)
+					Una forma de ejecutar las imágenes (con el comando docker run) son las
+					claves que hacen tan diferencial esta tecnología? Docker permite crear
+					imágenes autocontenidas, con una aplicación (o varias, aunque no debería
+					ser el caso) y todas sus dependencias, bibliotecas, paquetes, etc.
+					Múltiples instancias de estas imágenes se pueden desplegar de forma muy
+					sencilla, en forma de contenedores, ya sea en un entorno local de
+					desarrollo, en un servidor On-Prem (on- premise, instalado localmente
+					dentro del servidor y la infraestructura de la propia empresa), o en la
+					nube, sin ningún cambio. La virtualización de Docker es muy ligera.
+					Aprovecha los recursos de la máquina de forma muy efectiva, con muy poca
+					sobrecarga, y permite lanzar un contenedor en segundos, o incluso menos,
+					a la vez que mantener un alto nivel de aislamiento entre contenedores y
+					los recursos por los que compiten. Docker provee un DSL (Domain Specific
+					Language) muy sencillo y potente, usando los Dockerfile para crear
+					imágenes. La distribución de las imágenes se hace de forma muy
+					eficiente, re- utilizando capas compartidas entre distintas imágenes
+					para optimizar la transferencia y el espacio utilizado. ¿Qué ventajas
+					ofrece Docker frente a otro tipo de tecnologías similares como gestores
+					de paquetes, herramientas de gestión de configuración y máquinas
+					virtuales?: - Gestores de paquetes, tipo RPM / DPKG, etc. Crear una
+					imagen Docker es, en cierto modo, similar a usar un gestor de paquetes.
+					El problema con los gestores de paquetes es que distribuir una
+					aplicación sin sus dependencias, y delegar estas a los gestores de
+					paquetes, suele causar problemas con las bibliotecas compartidas y
+					versiones no compatibles (se quedan anticuadas, distintas distribuciones
+					usan distintas versiones y sistemas de empaquetado distintos, etc.). - -
+					Herramientas de gestión de configuración, como Puppet, Chef, Ansible,
+					Terraform... Estas herramientas permiten gestionar y automatizar la
+					infraestructura, la configuración de los sistemas operativos, etc., para
+					garantizar que el entorno donde desplegamos la aplicación siempre es
+					igual y replicable. Con Docker esto no es necesario, ya que una imagen
+					Docker es autocontenida, y se ejecutará exactamente igual en distintos
+					entornos y Sistemas Operativos (la única diferencia será el kernel, que
+					no debería afectar a no ser que tengamos funcionalidades muy
+					específicas, dependencia de drivers, GPUs, etc). Máquinas virtuales.
+					Otra tendencia ha sido crear bundles o imágenes para tecnologías VMs
+					(Virtual Machines), como VMWare, Hyper-V, VirtualBox, etc. y estándares
+					como OVF. El concepto, de nuevo, es similar: empaquetar la aplicación
+					con todas sus dependencias. El problema es que una máquina virtual emula
+					solo el hardware, por tanto, todas las dependencias necesitan también
+					incluir todo el sistema operativo. Aquí, la ventaja de Docker, es su
+					ligereza (a cambio perdemos un poco en seguridad y aislamiento, como
+					veremos más adelante).
+				</p>
 			</div>
-		</nav>
-
-		<hr />
-
-		<div class="container-sm">
-			<h2>¿Y por qué Docker?</h2>
-			<p>
-				¿Qué proporciona Docker?• • • • • • ¿Cuáles• • • Un formato de imagen de
-				contenedores. Un método para construir las imágenes (con el fichero
-				Dockerfile o el comando docker build) Una forma de gestionar las
-				imágenes (con los comandos docker images, docker rmi, etc.) Una forma de
-				gestionar los contenedores (con los comandos docker ps, docker rm, etc.)
-				Una forma de compartir las imágenes (con los comandos docker push/pull)
-				Una forma de ejecutar las imágenes (con el comando docker run) son las
-				claves que hacen tan diferencial esta tecnología? Docker permite crear
-				imágenes autocontenidas, con una aplicación (o varias, aunque no debería
-				ser el caso) y todas sus dependencias, bibliotecas, paquetes, etc.
-				Múltiples instancias de estas imágenes se pueden desplegar de forma muy
-				sencilla, en forma de contenedores, ya sea en un entorno local de
-				desarrollo, en un servidor On-Prem (on- premise, instalado localmente
-				dentro del servidor y la infraestructura de la propia empresa), o en la
-				nube, sin ningún cambio. La virtualización de Docker es muy ligera.
-				Aprovecha los recursos de la máquina de forma muy efectiva, con muy poca
-				sobrecarga, y permite lanzar un contenedor en segundos, o incluso menos,
-				a la vez que mantener un alto nivel de aislamiento entre contenedores y
-				los recursos por los que compiten. Docker provee un DSL (Domain Specific
-				Language) muy sencillo y potente, usando los Dockerfile para crear
-				imágenes. La distribución de las imágenes se hace de forma muy
-				eficiente, re- utilizando capas compartidas entre distintas imágenes
-				para optimizar la transferencia y el espacio utilizado. ¿Qué ventajas
-				ofrece Docker frente a otro tipo de tecnologías similares como gestores
-				de paquetes, herramientas de gestión de configuración y máquinas
-				virtuales?: - Gestores de paquetes, tipo RPM / DPKG, etc. Crear una
-				imagen Docker es, en cierto modo, similar a usar un gestor de paquetes.
-				El problema con los gestores de paquetes es que distribuir una
-				aplicación sin sus dependencias, y delegar estas a los gestores de
-				paquetes, suele causar problemas con las bibliotecas compartidas y
-				versiones no compatibles (se quedan anticuadas, distintas distribuciones
-				usan distintas versiones y sistemas de empaquetado distintos, etc.). - -
-				Herramientas de gestión de configuración, como Puppet, Chef, Ansible,
-				Terraform... Estas herramientas permiten gestionar y automatizar la
-				infraestructura, la configuración de los sistemas operativos, etc., para
-				garantizar que el entorno donde desplegamos la aplicación siempre es
-				igual y replicable. Con Docker esto no es necesario, ya que una imagen
-				Docker es autocontenida, y se ejecutará exactamente igual en distintos
-				entornos y Sistemas Operativos (la única diferencia será el kernel, que
-				no debería afectar a no ser que tengamos funcionalidades muy
-				específicas, dependencia de drivers, GPUs, etc). Máquinas virtuales.
-				Otra tendencia ha sido crear bundles o imágenes para tecnologías VMs
-				(Virtual Machines), como VMWare, Hyper-V, VirtualBox, etc. y estándares
-				como OVF. El concepto, de nuevo, es similar: empaquetar la aplicación
-				con todas sus dependencias. El problema es que una máquina virtual emula
-				solo el hardware, por tanto, todas las dependencias necesitan también
-				incluir todo el sistema operativo. Aquí, la ventaja de Docker, es su
-				ligereza (a cambio perdemos un poco en seguridad y aislamiento, como
-				veremos más adelante).
-			</p>
-		</div>
-
+		</main>
 		<!--<div class="container">
 			<div id="pdf-container"></div>
 		</div> -->
@@ -91,5 +90,6 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
+		<script src="../js/clock.js"></script>
 	</body>
 </html>

@@ -33,45 +33,38 @@
         <p id="time">00:00:00</p>
     </header>
     <hr>
-	<div class="container-books">
-		<ul class="book-details">
-			<li class="book-title">El título del libro</li>
-			<li class="book-author">Autor: Nombre del autor</li>
-
-			<a href="../html/pdf3.html">ir al libro</a>
-		</ul>
-
-		<div>
-			<img src="../../public/img/bash.jpg" alt="Portada del libro" />
+	<main>
+		<div class="container-books">
+			<div class="book">
+				<div class="book-details">
+					<p class="book-title">El título del libro</p>
+					<p class="book-author">Autor: Nombre del autor</p>
+					<a href="../html/pdf3.html">ir al libro</a>
+				</div>
+				<img src="../../public/img/bash.jpg" alt="Portada del libro" />
+			</div>
+			<div class="book">
+				<div class="book-details">
+					<p class="book-title">Docker Para devops</p>
+					<p class="book-author">Autor: Nombre del autor</p>
+					<a href="../html/pdf2.html">ir al libro</a>
+				</div>
+				<img src="../../public/img/docker.png" alt="Portada del libro" />
+			</div>
+			<div class="book">
+				<div class="book-details">
+					<p class="book-title">Rust 2018 VOL1</p>
+					<p class="book-author">Autor: Nombre del autor</p>
+					<a href="../html/pdf1.html">ir al libro</a>
+				</div>
+				<img src="../../public/img/rust.webp" alt="Portada del libro" />
+			</div>
 		</div>
-
-		<ul class="book-details">
-			<li class="book-title">Docker Para devops</li>
-			<li class="book-author">Autor: Nombre del autor</li>
-
-			<a href="../html/pdf2.html">ir al libro</a>
-		</ul>
-
-		<div>
-			<img src="../../public/img/docker.png" alt="Portada del libro" />
-		</div>
-
-		<ul class="book-details">
-			<li class="book-title">Rust 2018 VOL1</li>
-			<li class="book-author">Autor: Nombre del autor</li>
-
-			<a href="../html/pdf1.html">ir al libro</a>
-		</ul>
-
-		<div>
-			<img src="../../public/img/rust.webp" alt="Portada del libro" />
-		</div>
-	</div>
-
-	<!--<div id="bookList" class="container-books"></div> -->
+	</main>
     <hr>
     <footer>
         <a href="/src/html/about_us.html">Quienes somos</a>
+		<a href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
     <script src="../js/clock.js"></script>
 	<script src="../js/books_data.js"></script>
